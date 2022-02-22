@@ -3,11 +3,16 @@ import * as ReactDOM from 'react-dom';
 
 import { Workspace, WorkspaceProps, RDFDataProvider, GraphBuilder } from '../src/ontodia/index';
 
-import { onPageLoad } from './common';
+import { onPageLoad, getStorageKeys } from './common';
 
 const N3Parser: any = require('rdf-parser-n3');
 const RdfXmlParser: any = require('rdf-parser-rdfxml');
 const JsonLdParser: any = require('rdf-parser-jsonld');
+
+
+for (var key in getStorageKeys()){
+
+}
 
 const EXAMPLE = `@prefix fts: <https://w3id.org/datafabric.cc/ontologies/fts#> .
  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .

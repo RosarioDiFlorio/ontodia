@@ -23,6 +23,7 @@ module.exports = {
         rdf: path.join(examplesDir, 'rdf.ts'),
         demo: path.join(examplesDir, 'demo.ts'),
         sparql: path.join(examplesDir, 'sparql.ts'),
+        diagram: path.join(examplesDir,'diagram.ts'),
         dbpedia: path.join(examplesDir, 'dbpedia.ts'),
         sparqlNoStats: path.join(examplesDir, 'sparqlNoStats.ts'),
         sparqlConstruct: path.join(examplesDir, 'sparqlConstruct.ts'),
@@ -84,6 +85,12 @@ module.exports = {
             filename: 'sparql.html',
             title: 'Ontodia SparQL Demo',
             chunks: ['commons', 'sparql'],
+            template: htmlTemplatePath,
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'diagram.html',
+            title: 'Diagram SparQL Demo',
+            chunks: ['commons', 'diagram'],
             template: htmlTemplatePath,
         }),
         new HtmlWebpackPlugin({

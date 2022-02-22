@@ -127,7 +127,7 @@ export interface WorkspaceState {
 
 export class Workspace extends Component<WorkspaceProps, WorkspaceState> {
     static readonly defaultProps: Partial<WorkspaceProps> = {
-        hideTutorial: true,
+        hideTutorial: false,
         collapseNavigator: false,
         leftPanelInitiallyOpen: true,
         rightPanelInitiallyOpen: false,
