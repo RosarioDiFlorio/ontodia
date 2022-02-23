@@ -1,0 +1,12 @@
+running database with docker
+
+docker run  -d -p 3030:3030 --name fuseki -e TDB=2 -e FUSEKI_DATASET_1=ontology -v C:\Users\Rosario\Development\git\fuseki-volume -e ADMIN_PASSWORD=pw123 stain/jena-fuseki
+
+
+
+
+
+
+diagrams
+http://localhost:10444/sparql.html#4bbcff6f9d
+http://localhost:10444/sparql.html#4dad862433

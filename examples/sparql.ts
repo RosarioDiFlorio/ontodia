@@ -49,11 +49,9 @@ const props: WorkspaceProps & ClassAttributes<Workspace> = {
         ],
     },
     languages: [
-        {code: 'en', label: 'English'},
-        {code: 'de', label: 'German'},
-        {code: 'ru', label: 'Russian'},
+        
     ],
-    language: 'ru',
+    language: 'en',
     elementTemplateResolver: types => {
         if (types.indexOf('http://www.ics.forth.gr/isl/CRMinf/I2_Belief') !== -1) {
             return GroupTemplate;
